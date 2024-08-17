@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #1f2937; /* Slate 800 */
+    --color-primary1: #22344d; /* Slate 700 */
+    --color-secondary: #f97316; /* Orange 500 */
+    --color-secondary1: #fc8d3e; /* Orange 500 */
+    --color-background: #ffffff; /* White */
+    --color-background1: #fdf8f8; /* White */
+    --color-background2: #f3f3f3; /* White */
+    --color-accent: #229ced; /* Blue 800 */
+  }
+  
+  [data-theme="true"] {
+    --color-primary: #f3f4f6; /* Slate 100 */
+    --color-secondary: #fb923c; /* Orange 400 */
+    --color-secondary1: #fba762; /* Orange 400 */
+    --color-background: #1f2937; /* Slate 800 */
+    --color-background1: #223043; /* Slate 800 */
+    --color-background2: #1b2b41; /* Slate 800 */
+    --color-accent: #3b82f6; /* Blue 500 */
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .about-bg-svg{
+    animation: infinite 20s ease bgImageAbout;
+  }
+  @keyframes bgImageAbout {
+    0%{
+      transform: rotate(0)  scale(1.6);
+    }
+    100%{
+      transform: rotate(360deg)  scale(1.6);
+    }
+    
+  }
+  

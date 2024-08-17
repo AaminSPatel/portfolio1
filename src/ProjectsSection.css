@@ -1,0 +1,42 @@
+.pinterest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-card img {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  @keyframes move-up {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+  .animate-up {
+    animation: move-up 4s infinite ease-in-out;
+  }
+  
+  .animate-down {
+    animation: move-down 4s infinite ease-in-out;
+  }
+  
