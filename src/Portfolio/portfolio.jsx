@@ -7,7 +7,7 @@ import ProjectsSection from '../projects';
 import Footer from '../footer';
 import Footer2 from './footer1';
 import { useTheme } from '../themeContext';
-import Experience from '../experience/'
+import Experience from '../experience'
 const Portfolio = () => {
   const {isDarkMode} = useTheme();
  
